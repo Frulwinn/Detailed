@@ -25,6 +25,19 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfk-Pp-V9i" id="xLM-eC-CAg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-2h-StC">
+                                            <rect key="frame" x="137.5" y="10" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="fqM-fK-y0D"/>
+                                                <constraint firstAttribute="width" constant="100" id="owY-LJ-dto"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xVd-2h-StC" firstAttribute="centerY" secondItem="xLM-eC-CAg" secondAttribute="centerY" id="JL0-Vb-Iie"/>
+                                        <constraint firstItem="xVd-2h-StC" firstAttribute="centerX" secondItem="xLM-eC-CAg" secondAttribute="centerX" id="Ypx-Kx-RPD"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
