@@ -39,6 +39,9 @@
                                         <constraint firstItem="xVd-2h-StC" firstAttribute="centerX" secondItem="xLM-eC-CAg" secondAttribute="centerX" id="Ypx-Kx-RPD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dJk-jn-37c" kind="show" id="YMj-qR-uVs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
