@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="vl4-0w-mZg">
             <objects>
                 <tableViewController id="emf-7I-IdL" customClass="TableViewController" customModule="Detailed" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                             <outlet property="delegate" destination="emf-7I-IdL" id="bBk-Ai-FkI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1Du-5I-kiM"/>
+                    <navigationItem key="navigationItem" id="1Du-5I-kiM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVX-hC-NTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,30 @@
                     <view key="view" contentMode="scaleToFill" id="VRt-Ii-qyU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-0p-hJ8">
+                                <rect key="frame" x="20" y="164" width="335" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwp-fY-PlV">
+                                        <rect key="frame" x="124.5" y="0.0" width="86" height="51"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R77-O7-Fug">
+                                        <rect key="frame" x="47.5" y="75" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8uM-Bg-gDb" firstAttribute="bottom" secondItem="lpW-0p-hJ8" secondAttribute="bottom" constant="300" id="2q8-cC-FCw"/>
+                            <constraint firstItem="lpW-0p-hJ8" firstAttribute="leading" secondItem="8uM-Bg-gDb" secondAttribute="leading" constant="20" id="Qon-dh-uAy"/>
+                            <constraint firstItem="8uM-Bg-gDb" firstAttribute="trailing" secondItem="lpW-0p-hJ8" secondAttribute="trailing" constant="20" id="adb-VW-42Y"/>
+                            <constraint firstItem="lpW-0p-hJ8" firstAttribute="top" secondItem="8uM-Bg-gDb" secondAttribute="top" constant="100" id="nvW-No-Mro"/>
+                            <constraint firstItem="lpW-0p-hJ8" firstAttribute="centerX" secondItem="VRt-Ii-qyU" secondAttribute="centerX" id="ox7-dh-Wlc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8uM-Bg-gDb"/>
                     </view>
                 </viewController>
