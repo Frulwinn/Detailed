@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="bfk-Pp-V9i" customClass="TableViewCell" customModule="Detailed" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="120" id="bfk-Pp-V9i" customClass="TableViewCell" customModule="Detailed" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfk-Pp-V9i" id="xLM-eC-CAg">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfk-Pp-V9i" id="xLM-eC-CAg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-2h-StC">
-                                            <rect key="frame" x="137.5" y="10" width="100" height="100"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-2h-StC">
+                                            <rect key="frame" x="137.5" y="9.5" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="fqM-fK-y0D"/>
                                                 <constraint firstAttribute="width" constant="100" id="owY-LJ-dto"/>
@@ -35,8 +35,10 @@
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="xVd-2h-StC" firstAttribute="centerY" secondItem="xLM-eC-CAg" secondAttribute="centerY" id="JL0-Vb-Iie"/>
-                                        <constraint firstItem="xVd-2h-StC" firstAttribute="centerX" secondItem="xLM-eC-CAg" secondAttribute="centerX" id="Ypx-Kx-RPD"/>
+                                        <constraint firstItem="xVd-2h-StC" firstAttribute="leading" secondItem="xLM-eC-CAg" secondAttribute="leadingMargin" constant="121.5" id="0pp-qz-m8t"/>
+                                        <constraint firstAttribute="bottom" secondItem="xVd-2h-StC" secondAttribute="bottom" constant="9.5" id="JFn-Xn-Dc6"/>
+                                        <constraint firstItem="xVd-2h-StC" firstAttribute="top" secondItem="xLM-eC-CAg" secondAttribute="top" constant="9.5" id="ev1-kY-rzn"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xVd-2h-StC" secondAttribute="trailing" constant="121.5" id="o9u-pI-cfq"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
